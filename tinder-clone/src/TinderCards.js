@@ -7,7 +7,7 @@ function TinderCards() {
     const [people, setPeople] =useState([])
     useEffect(()=>{
         async function fetchData(){
-            const req=await axios.get('/tinder/cards')
+            const req=await axios.get('/tinder/card')
 
             setPeople(req.data)
         }
