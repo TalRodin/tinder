@@ -8,7 +8,6 @@ function TinderCards() {
     useEffect(()=>{
         async function fetchData(){
             const req=await axios.get('/tinder/card')
-
             setPeople(req.data)
         }
         fetchData()
@@ -20,7 +19,7 @@ function TinderCards() {
         // setLastDirection(direction)
       }
        
-      const outOfFrame = (name) => {
+    const outOfFrame = (name) => {
         console.log(name + ' left the screen')
       }
     return (
