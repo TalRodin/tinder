@@ -22,3 +22,8 @@
 .chat__timestamp{
     color: lightgray;
 }
+
+a{
+    text-decoration: None;
+    color:inherit;
+}
